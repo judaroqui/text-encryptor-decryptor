@@ -1,0 +1,181 @@
+/* Variables de color */
+:root {
+    --background: hsl(0, 0%, 100%);
+    --foreground: hsl(240, 10%, 3.9%);
+    --card-background: hsl(0, 0%, 100%);
+    --card-foreground: hsl(240, 10%, 3.9%);
+    --input-border: hsl(240, 5.9%, 90%);
+    --button-background: hsl(240, 5.9%, 10%);
+    --button-foreground: hsl(0, 0%, 98%);
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--background);
+    color: var(--foreground);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    margin: 0;
+    zoom: 120%;
+}
+
+.footer {
+    color: #333; 
+    text-align: center;
+    padding: 10px; 
+    position: fixed; 
+    bottom: 0; 
+    width: 100%;
+    font-family: Arial, sans-serif;
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    gap: 8px; 
+}
+
+.footer-image {
+    width: 16px; 
+    height: auto; 
+    vertical-align: middle;
+}   
+
+.container {
+    background-color: var(--card-background);
+    padding: 24px;
+    border-radius: 12px;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 16px;
+    font-size: 24px;
+    color: var(--button-background);
+}
+
+p {
+    font-size: 14px;
+    color: var(--card-foreground);
+}
+
+.textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+    border: 1px solid var(--input-border);
+    border-radius: 8px;
+    background-color: var(--background);
+    color: var(--foreground);
+    resize: none;
+}
+
+.button {
+    width: 48%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: var(--button-background);
+    color: var(--button-foreground);
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: hsl(240, 5.9%, 20%);
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.result-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    border: 1px solid var(--input-border);
+    border-radius: 8px;
+    background-color: var(--background);
+    color: var(--foreground);
+}
+
+.result-text {
+    color: hsl(240, 3.8%, 45%);
+}
+
+.copy-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: hsl(240, 3.8%, 45%);
+}
+
+.copy-button:hover {
+    color: var(--foreground);
+}
+
+.button {
+    width: 48%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: var(--button-background);
+    color: var(--button-foreground);
+    font-weight: bold;
+    transition: transform 0.3s ease, background-color 0.3s;
+}
+
+.button:hover {
+    transform: scale(1.05); 
+    background-color: hsl(240, 5.9%, 20%);
+}
+
+.copy-button img {
+    transition: transform 0.3s ease, fill 0.3s;
+}
+
+.copy-button:hover img {
+    transform: scale(1.1); 
+}
+
+.info-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .info-container .info-text {
+    display: none; 
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 3px;
+    white-space: nowrap;
+    font-size: 12px;
+    z-index: 1;
+  }
+  
+  /* Mostrar el cuadro de información al pasar el mouse */
+  .info-container:hover .info-text {
+    display: block; /* Muestra el cuadro de información al pasar el mouse */
+  }
+  
+  /* Estilo para el SVG */
+  .info-container img {
+    width: 20px; /* Ajusta el tamaño según sea necesario */
+    vertical-align: middle; /* Alinea verticalmente con el texto */
+  }
+
+  
+  

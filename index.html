@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="/img/logo.svg" type="image/svg+xml">
+</head>
+<body>
+    <div class="container">
+        <h1 >Encriptador de Texto <span class="info-container">
+            <img src="/img/info.svg" alt="Info">
+            <span class="info-text">El encriptador transforma mayusculas en minusculas y remueve acentos sin problema.</span>
+          </span>
+        </h1>
+        <textarea id="input-text" class="textarea" placeholder="Ingrese el texto aqui..."></textarea>
+
+        <div class="button-container"> 
+            <button id="encrypt-button" class="button">Encriptar</button>
+            <button id="decrypt-button" class="button">Decriptar</button>
+        </div>
+
+        <div class="result-container">
+            <span id="encrypted-text" class="result-text"></span>
+            <p id="no-message" class="no-message" style="display: none;">
+                <b>Ningún mensaje fue encontrado.</b><br>
+                <br>Ingresa el texto que desees encriptar o desencriptar.
+            </p>
+            <button id="copy-button" class="copy-button">
+                <img src="img/copy-icon.svg" alt="Copy Icon" width="24" height="24">
+            </button>                       
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+<footer class="footer">
+    <p style="font-size: 11px; ">Juan David Rodriguez</p>
+    <img src="img/colombia.svg" alt="Bandera de Colombia" class="footer-image">
+  </footer>
+</html>
