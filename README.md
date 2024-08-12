@@ -10,8 +10,12 @@ Bienvenidos a la aplicación de encriptación de texto. Esta herramienta te perm
 - **Copiar al Portapapeles:** Botón para copiar el texto encriptado/desencriptado al portapapeles.
 - **Conversión a Minúsculas:** Todas las letras mayúsculas se convierten a minúsculas antes de procesar el texto.
 - **Eliminación de Acentos:** Los caracteres con acento se convierten a su versión sin acento antes de la encriptación o desencriptación.
-
-- [![Captura-de-pantalla-2024-08-12-172609.png](https://i.postimg.cc/6TsgnKRc/Captura-de-pantalla-2024-08-12-172609.png)](https://postimg.cc/rRJf2vfR)
+  
+<p align="center">
+  <a href="https://postimg.cc/rRJf2vfR">
+    <img src="https://i.postimg.cc/6TsgnKRc/Captura-de-pantalla-2024-08-12-172609.png" alt="Captura de pantalla">
+  </a>
+</p>
 
 ## Llaves de Encriptación
 
