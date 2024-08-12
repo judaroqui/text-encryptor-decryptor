@@ -11,6 +11,8 @@ Bienvenidos a la aplicación de encriptación de texto. Esta herramienta te perm
 - **Conversión a Minúsculas:** Todas las letras mayúsculas se convierten a minúsculas antes de procesar el texto.
 - **Eliminación de Acentos:** Los caracteres con acento se convierten a su versión sin acento antes de la encriptación o desencriptación.
 
+- [![Captura-de-pantalla-2024-08-12-172609.png](https://i.postimg.cc/6TsgnKRc/Captura-de-pantalla-2024-08-12-172609.png)](https://postimg.cc/rRJf2vfR)
+
 ## Llaves de Encriptación
 
 Las letras se reemplazan de la siguiente manera:
