@@ -166,15 +166,13 @@ p {
     z-index: 1;
   }
   
-  /* Mostrar el cuadro de información al pasar el mouse */
   .info-container:hover .info-text {
-    display: block; /* Muestra el cuadro de información al pasar el mouse */
+    display: block;
   }
   
-  /* Estilo para el SVG */
   .info-container img {
-    width: 20px; /* Ajusta el tamaño según sea necesario */
-    vertical-align: middle; /* Alinea verticalmente con el texto */
+    width: 20px;
+    vertical-align: middle;
   }
 
   
