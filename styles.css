@@ -134,7 +134,6 @@ header {
     justify-content: center;
     align-items: center; 
     gap: 8px; 
-
     color: var(--foreground-light);
 }
 
