@@ -7,6 +7,25 @@
     --input-border: hsl(240, 5.9%, 90%);
     --button-background: hsl(240, 5.9%, 10%);
     --button-foreground: hsl(0, 0%, 98%);
+<<<<<<< Updated upstream
+=======
+    --foreground-light: hsl(240, 10%, 20%); /* Color en modo claro */
+    --foreground-dark: hsl(0, 0%, 100%);    /* Color en modo oscuro */
+    --background-light: hsl(0, 0%, 100%);
+    --background-dark: hsl(240, 10%, 10%);
+}
+
+/* DarkMode */ 
+body.dark-mode {    
+    background-color: var(--background-dark);
+    color: var(--foreground-dark);
+    --background: hsl(240, 10%, 3.9%);
+    --foreground: hsl(0, 0%, 98%);
+    --card-background: hsl(240, 10%, 15%);
+    --input-border: hsl(240, 5.9%, 50%);
+    --button-background: hsl(240, 5.9%, 20%);
+    --button-foreground: hsl(0, 0%, 98%);
+>>>>>>> Stashed changes
 }
 
 body {
@@ -21,6 +40,88 @@ body {
     zoom: 120%;
 }
 
+<<<<<<< Updated upstream
+=======
+body.dark-mode h1 {
+    color: var(--button-foreground);
+}
+
+body.dark-mode .result-text, 
+body.dark-mode .small-note {
+    color: var(--foreground);
+}
+
+body.dark-mode .info-container img,
+body.dark-mode .copy-button img {
+    filter: invert(1) grayscale(100%);
+}
+
+body.dark-mode .info-text {
+    background-color: var(--foreground);
+    color: var(--background);
+}
+
+body.dark-mode .no-message {
+    color: var(--foreground);
+    background-color: var(--background);
+}
+
+body.dark-mode .floating-button img {
+    filter: invert(1) brightness(2); /* Cambia el color del logo en modo oscuro */
+}
+
+
+
+body.dark-mode .footer {
+    color: var(--foreground-dark);
+}
+
+#nombre {
+    color: inherit; 
+}
+
+/* Estilos para el header */
+header {
+    position: fixed; 
+    top: 0; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+    padding: 10px; 
+    z-index: 1000; 
+}
+
+/* Estilos para el botón flotante */
+.floating-button {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: var(--button-background);
+    color: var(--button-foreground);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.floating-button img {
+    width: 24px;
+    height: auto;
+}
+
+.floating-button:hover {
+    background-color: hsl(240, 5.9%, 20%);
+}
+
+.small-note {
+    font-size: 12px;
+    color: hsl(240, 3.8%, 45%);
+    margin-top: 5px;
+}
+
+>>>>>>> Stashed changes
 .footer {
     color: #333; 
     text-align: center;
@@ -33,6 +134,10 @@ body {
     justify-content: center;
     align-items: center; 
     gap: 8px; 
+<<<<<<< Updated upstream
+=======
+    color: var(--foreground-light);
+>>>>>>> Stashed changes
 }
 
 .footer-image {
