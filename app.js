@@ -70,3 +70,10 @@ document.getElementById('copy-button').addEventListener('click', function () {
 document.getElementById('toggle-dark-mode').addEventListener('click', () => {
     document.body.classList.toggle('dark-mode');
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const linkedinButton = document.getElementById('linkedin-button');
+    linkedinButton.addEventListener('click', function() {
+        window.open('https://www.linkedin.com/in/judaroqui/', '_blank');
+    });
+});

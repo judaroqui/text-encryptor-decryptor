@@ -116,7 +116,6 @@ header {
     background-color: hsl(240, 5.9%, 20%);
 }
 
-
 .small-note {
     font-size: 12px;
     color: hsl(240, 3.8%, 45%);
@@ -145,6 +144,20 @@ header {
     vertical-align: middle;
 }   
 
+.footer-button {
+    background: transparent;
+    border: none;
+    font-size: 11px;
+    cursor: pointer;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+body.dark-mode .footer-button {
+    color: var(--button-foreground); /* Cambia el color del texto en modo oscuro */
+}
+
 .container {
     background-color: var(--card-background);
     padding: 24px;
@@ -165,7 +178,6 @@ p {
     font-size: 14px;
     color: var(--card-foreground);
 }
-
 
 .textarea {
     width: 100%;
