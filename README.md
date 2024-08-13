@@ -2,6 +2,8 @@
 
 Bienvenidos a la aplicación de encriptación de texto. Esta herramienta te permite convertir mensajes en textos encriptados utilizando un sistema específico de sustitución de letras. También puedes desencriptar los textos encriptados para obtener el mensaje original.
 
+  Pruébalo  aqui: **[Encriptador](https://judaroqui.github.io/text-encryptor-decryptor/)**
+  
 ## Características
 
 - **Encriptación:** Convierte textos en un formato encriptado usando sustituciones específicas para cada vocal.
