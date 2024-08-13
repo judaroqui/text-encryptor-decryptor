@@ -14,8 +14,8 @@ Bienvenidos a la aplicación de encriptación de texto. Esta herramienta te perm
 - **Eliminación de Acentos:** Los caracteres con acento se convierten a su versión sin acento antes de la encriptación o desencriptación.
   
 <p align="center">
-  <a href="https://postimg.cc/rRJf2vfR">
-    <img src="https://i.postimg.cc/6TsgnKRc/Captura-de-pantalla-2024-08-12-172609.png" alt="Captura de pantalla">
+  <a href="https://judaroqui.github.io/text-encryptor-decryptor/">
+    <img src="https://i.postimg.cc/Gm3J5gkz/Captura-de-pantalla-2024-08-12-172609.png" alt="decryptor">
   </a>
 </p>
 
