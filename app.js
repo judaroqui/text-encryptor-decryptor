@@ -67,3 +67,6 @@ document.getElementById('copy-button').addEventListener('click', function () {
     });
 });
 
+document.getElementById('toggle-dark-mode').addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+});

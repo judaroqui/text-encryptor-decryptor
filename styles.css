@@ -7,8 +7,6 @@
     --input-border: hsl(240, 5.9%, 90%);
     --button-background: hsl(240, 5.9%, 10%);
     --button-foreground: hsl(0, 0%, 98%);
-<<<<<<< Updated upstream
-=======
     --foreground-light: hsl(240, 10%, 20%); /* Color en modo claro */
     --foreground-dark: hsl(0, 0%, 100%);    /* Color en modo oscuro */
     --background-light: hsl(0, 0%, 100%);
@@ -16,7 +14,7 @@
 }
 
 /* DarkMode */ 
-body.dark-mode {    
+body.dark-mode {        
     background-color: var(--background-dark);
     color: var(--foreground-dark);
     --background: hsl(240, 10%, 3.9%);
@@ -25,10 +23,11 @@ body.dark-mode {
     --input-border: hsl(240, 5.9%, 50%);
     --button-background: hsl(240, 5.9%, 20%);
     --button-foreground: hsl(0, 0%, 98%);
->>>>>>> Stashed changes
 }
 
 body {
+    background-color: var(--background-light);
+    color: var(--foreground-light);
     font-family: 'Inter', sans-serif;
     background-color: var(--background);
     color: var(--foreground);
@@ -40,8 +39,6 @@ body {
     zoom: 120%;
 }
 
-<<<<<<< Updated upstream
-=======
 body.dark-mode h1 {
     color: var(--button-foreground);
 }
@@ -80,6 +77,10 @@ body.dark-mode .footer {
     color: inherit; 
 }
 
+.footer {
+    color: var(--foreground-light);
+}
+
 /* Estilos para el header */
 header {
     position: fixed; 
@@ -115,13 +116,13 @@ header {
     background-color: hsl(240, 5.9%, 20%);
 }
 
+
 .small-note {
     font-size: 12px;
     color: hsl(240, 3.8%, 45%);
     margin-top: 5px;
 }
 
->>>>>>> Stashed changes
 .footer {
     color: #333; 
     text-align: center;
@@ -134,10 +135,8 @@ header {
     justify-content: center;
     align-items: center; 
     gap: 8px; 
-<<<<<<< Updated upstream
-=======
+
     color: var(--foreground-light);
->>>>>>> Stashed changes
 }
 
 .footer-image {
@@ -166,6 +165,7 @@ p {
     font-size: 14px;
     color: var(--card-foreground);
 }
+
 
 .textarea {
     width: 100%;
