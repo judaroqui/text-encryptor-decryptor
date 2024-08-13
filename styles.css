@@ -7,8 +7,8 @@
     --input-border: hsl(240, 5.9%, 90%);
     --button-background: hsl(240, 5.9%, 10%);
     --button-foreground: hsl(0, 0%, 98%);
-    --foreground-light: hsl(240, 10%, 20%); /* Color en modo claro */
-    --foreground-dark: hsl(0, 0%, 100%);    /* Color en modo oscuro */
+    --foreground-light: hsl(240, 10%, 20%); 
+    --foreground-dark: hsl(0, 0%, 100%);    
     --background-light: hsl(0, 0%, 100%);
     --background-dark: hsl(240, 10%, 10%);
 }
@@ -29,14 +29,13 @@ body {
     background-color: var(--background-light);
     color: var(--foreground-light);
     font-family: 'Inter', sans-serif;
-    background-color: var(--background);
-    color: var(--foreground);
     display: flex;
     justify-content: center;
     align-items: center;
     height: 80vh;
     margin: 0;
-    zoom: 120%;
+    zoom: 100%;
+    min-width: 255px; 
 }
 
 body.dark-mode h1 {
@@ -64,13 +63,15 @@ body.dark-mode .no-message {
 }
 
 body.dark-mode .floating-button img {
-    filter: invert(1) brightness(2); /* Cambia el color del logo en modo oscuro */
+    filter: invert(1) brightness(2);
 }
-
-
 
 body.dark-mode .footer {
     color: var(--foreground-dark);
+}
+
+body.dark-mode .footer-button {
+    color: var(--button-foreground);
 }
 
 #nombre {
@@ -117,24 +118,23 @@ header {
 }
 
 .small-note {
-    font-size: 12px;
+    font-size: 14px;
     color: hsl(240, 3.8%, 45%);
     margin-top: 5px;
 }
 
 .footer {
-    color: #333; 
     text-align: center;
     padding: 10px; 
     position: fixed; 
     bottom: 0; 
     width: 100%;
-    font-family: Arial, sans-serif;
     display: flex; 
     justify-content: center;
     align-items: center; 
     gap: 8px; 
     color: var(--foreground-light);
+    z-index: 1000; /* Elevar el z-index para que el footer esté por encima de otros elementos */
 }
 
 .footer-image {
@@ -146,43 +146,41 @@ header {
 .footer-button {
     background: transparent;
     border: none;
-    font-size: 11px;
+    font-size: 13px;
     cursor: pointer;
     text-align: center;
     font-family: Arial, sans-serif;
     transition: background-color 0.3s ease;
 }
 
-body.dark-mode .footer-button {
-    color: var(--button-foreground); /* Cambia el color del texto en modo oscuro */
-}
-
 .container {
     background-color: var(--card-background);
     padding: 24px;
     border-radius: 12px;
-    max-width: 400px;
+    max-width: 450px;
     width: 100%;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     text-align: center;
+    margin: 0 16px; /* Espaciado horizontal para evitar que el contenido toque el borde de la pantalla */
+    zoom: 120%
 }
 
 h1 {
     margin-bottom: 16px;
-    font-size: 24px;
+    font-size: 26px;
     color: var(--button-background);
 }
 
 p {
-    font-size: 14px;
+    font-size: 16px;
     color: var(--card-foreground);
 }
 
 .textarea {
-    width: 100%;
+    width: 95%;
     padding: 8px;
-    margin-bottom: 12px;
-    border: 1px solid var(--input-border);
+    margin-bottom: 16px;
+    border: 2px solid var(--input-border);
     border-radius: 8px;
     background-color: var(--background);
     color: var(--foreground);
@@ -216,7 +214,7 @@ p {
     justify-content: space-between;
     align-items: center;
     padding: 8px;
-    border: 1px solid var(--input-border);
+    border: 2px solid var(--input-border);
     border-radius: 8px;
     background-color: var(--background);
     color: var(--foreground);
@@ -265,31 +263,29 @@ p {
 .info-container {
     position: relative;
     display: inline-block;
-  }
-  
-  .info-container .info-text {
+}
+
+.info-container .info-text {
     display: none; 
     position: absolute;
     bottom: 100%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-65%);
     padding: 5px;
     background-color: #333;
     color: #fff;
-    border-radius: 3px;
+    border-radius: 8px;
     white-space: nowrap;
     font-size: 12px;
-    z-index: 1;
-  }
+}
   
-  .info-container:hover .info-text {
+.info-container:hover .info-text {
     display: block;
-  }
+}
   
-  .info-container img {
+.info-container img {
     width: 20px;
     vertical-align: middle;
-  }
+}
 
-  
-  
+
