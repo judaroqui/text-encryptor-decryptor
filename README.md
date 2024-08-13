@@ -15,7 +15,7 @@ Bienvenidos a la aplicación de encriptación de texto. Esta herramienta te perm
   
 <p align="center">
   <a href="https://judaroqui.github.io/text-encryptor-decryptor/">
-    <img src="https://i.postimg.cc/Gm3J5gkz/Captura-de-pantalla-2024-08-12-172609.png" alt="decryptor">
+    <img src="https://i.postimg.cc/Gm3J5gkz/Captura-de-pantalla-2024-08-12-172609.png" alt="decryptor" style="width: 60%;">
   </a>
 </p>
 
