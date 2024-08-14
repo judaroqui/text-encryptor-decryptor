@@ -134,7 +134,7 @@ header {
     align-items: center; 
     gap: 8px; 
     color: var(--foreground-light);
-    z-index: 1000; /* Elevar el z-index para que el footer esté por encima de otros elementos */
+    z-index: 1000;
 }
 
 .footer-image {
@@ -161,8 +161,8 @@ header {
     width: 100%;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     text-align: center;
-    margin: 0 16px; /* Espaciado horizontal para evitar que el contenido toque el borde de la pantalla */
-    zoom: 120%
+    margin: 0 16px;
+    zoom: 120%;
 }
 
 h1 {
@@ -287,5 +287,3 @@ p {
     width: 20px;
     vertical-align: middle;
 }
-
-
