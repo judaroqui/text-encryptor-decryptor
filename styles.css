@@ -178,7 +178,8 @@ h1 {
     color: var(--button-background);
 }
 
-p {
+.no-message {
+    margin-right: 7%;
     font-size: 16px;
     color: var(--card-foreground);
 }
@@ -229,7 +230,6 @@ p {
     min-height: 30px;
     flex-direction: column;
     justify-content: space-evenly;
-
 }
 
 .result-text {
@@ -239,10 +239,6 @@ p {
     overflow-wrap: break-word; 
     max-width: 93%;
     text-align: left;
-}
-
-.result-text.large-text {
-    text-align: left; /* Justificar cuando el texto es muy grande */
 }
 
 .copy-button {
