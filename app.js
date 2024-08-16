@@ -48,6 +48,13 @@ function isInvalidInput(text) {
     return /^[^a-zA-Z]*$/.test(text);
 }
 
+function textWithoutEncriptedKey(text) {
+    const cleanedText = cleanText(text);
+    const decryptedText = decryptText(cleanedText);
+    return cleanedText === decryptedText;
+}
+
+
 document.getElementById('encrypt-button').addEventListener('click', function () {
     const inputText = document.getElementById('input-text').value.trim();
     const noMessage = document.getElementById('no-message');
@@ -87,8 +94,12 @@ document.getElementById('decrypt-button').addEventListener('click', function () 
     } else {
         noMessage.style.display = 'none';
         invalidInputMessage.style.display = 'none';
-        const decryptedText = decryptText(inputText);
-        resultText.innerText = decryptedText;
+        if (textWithoutEncriptedKey(inputText)) {
+            // No cambiar el texto del área de resultados
+        } else {
+            const decryptedText = decryptText(inputText);
+            resultText.innerText = decryptedText;
+        }
     }
 });
 
