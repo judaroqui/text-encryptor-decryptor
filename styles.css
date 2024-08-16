@@ -170,6 +170,7 @@ header {
     text-align: center;
     margin: 150px 16px; /*xtop x*/
     zoom: 120%;
+    min-width: inherit;
 }
 
 .input-container {
