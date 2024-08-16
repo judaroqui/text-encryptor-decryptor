@@ -13,6 +13,10 @@ const texts = {
     encryptButton: "Encriptar",
     decryptButton: "Desencriptar",
     inputPlaceholder: "Ingrese el texto aqui...",
+    footerButton: `
+        Juan David Rodriguez
+        <img src="img/colombia.svg" alt="Bandera de Colombia" class="footer-image">
+    `
 };
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -26,6 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('encrypt-button').textContent = texts.encryptButton;
     document.getElementById('decrypt-button').textContent = texts.decryptButton;
     document.getElementById('input-text').placeholder = texts.inputPlaceholder;
+    document.getElementById('linkedin-button').innerHTML = texts.footerButton;
 });
 
 // Función para eliminar caracteres especiales y números
