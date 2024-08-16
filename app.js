@@ -13,7 +13,6 @@ const texts = {
     encryptButton: "Encriptar",
     decryptButton: "Desencriptar",
     inputPlaceholder: "Ingrese el texto aqui...",
-    footerButton: "Juan David Rodriguez"
 };
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -27,7 +26,6 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('encrypt-button').textContent = texts.encryptButton;
     document.getElementById('decrypt-button').textContent = texts.decryptButton;
     document.getElementById('input-text').placeholder = texts.inputPlaceholder;
-    document.getElementById('footer-button').textContent = texts.footerButton;
 });
 
 // Función para eliminar caracteres especiales y números
