@@ -59,7 +59,7 @@ body.dark-mode .info-text {
 
 body.dark-mode .no-message {
     color: var(--foreground);
-    background-color: var(--background);
+    background-color: transparent;
 }
 
 body.dark-mode .floating-button img {
