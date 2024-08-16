@@ -220,13 +220,16 @@ p {
 
 .result-container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 8px;
     border: 2px solid var(--input-border);
     border-radius: 8px;
     background-color: var(--background);
     color: var(--foreground);
+    position: relative;
+    min-height: 30px;
+    flex-direction: column;
+    justify-content: space-evenly;
+
 }
 
 .result-text {
@@ -234,7 +237,12 @@ p {
     word-wrap: break-word; 
     white-space: pre-wrap; 
     overflow-wrap: break-word; 
-    max-width: 90%; 
+    max-width: 93%;
+    text-align: left;
+}
+
+.result-text.large-text {
+    text-align: left; /* Justificar cuando el texto es muy grande */
 }
 
 .copy-button {
@@ -242,6 +250,9 @@ p {
     border: none;
     cursor: pointer;
     color: hsl(240, 3.8%, 45%);
+    position: absolute; /* Posiciona el botón de copiar de manera absoluta */
+    top: 5px; /* Ajusta según sea necesario */
+    right: 2px; /* Ajusta según sea necesario */
 }
 
 .copy-button:hover {
