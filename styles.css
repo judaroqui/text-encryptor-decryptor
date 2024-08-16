@@ -205,7 +205,7 @@ p {
     background-color: var(--button-background);
     color: var(--button-foreground);
     font-weight: bold;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease;
 }
 
 .button:hover {
