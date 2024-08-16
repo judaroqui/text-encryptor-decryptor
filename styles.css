@@ -24,6 +24,12 @@ body.dark-mode {
     --button-foreground: hsl(0, 0%, 98%);
 }
 
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden; /* Evita el scroll horizontal */
+}
 body {
     background-color: var(--background-light);
     color: var(--foreground-light);
@@ -110,7 +116,8 @@ body.dark-mode .footer {
     justify-content: center;
     align-items: center; 
     gap: 8px; 
-    color: var(--foreground);
+    color: var(--foreground-light);
+    z-index: 1000;
 }
 
 .footer-image {
@@ -150,7 +157,20 @@ p {
     border-radius: 8px;
     background-color: var(--background);
     color: var(--foreground);
-    resize: none;
+    resize: vertical;
+    min-height: 30px; 
+    overflow-y: auto; 
+}
+h1 {
+    margin-bottom: 16px;
+    font-size: 26px;
+    color: var(--button-background);
+}
+
+.no-message {
+    margin-right: 7%;
+    font-size: 16px;
+    color: var(--card-foreground);
 }
 
 .button {
