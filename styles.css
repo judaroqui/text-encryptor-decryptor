@@ -31,8 +31,8 @@ body {
     font-family: 'Inter', sans-serif;
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 80vh;
+    align-items: flex-start; /* Cambia de center a flex-start */
+    min-height: 100vh; /* Asegura que el body cubra toda la altura de la ventana */
     margin: 0;
     zoom: 100%;
     min-width: 255px; 
@@ -71,7 +71,8 @@ body.dark-mode .footer {
 }
 
 body.dark-mode .footer-button {
-    color: var(--button-foreground);
+    background-color: var(--button-background); /* Mismo color de fondo que los otros botones en modo oscuro */
+    color: var(--button-foreground); /* Mismo color de texto que los otros botones en modo oscuro */
 }
 
 #nombre {
@@ -137,20 +138,26 @@ header {
     z-index: 1000;
 }
 
-.footer-image {
+.footer-button img {
     width: 16px; 
     height: auto; 
-    vertical-align: middle;
+    margin-left: 8px
 }   
 
 .footer-button {
-    background: transparent;
+    background-color: var(--background); /* Mismo color de fondo que los otros botones */
+    color: var(--foreground); /* Mismo color de texto que los otros botones */
     border: none;
     font-size: 13px;
     cursor: pointer;
     text-align: center;
     font-family: Arial, sans-serif;
     transition: background-color 0.3s ease;
+    padding: 10px;
+    border-radius: 8px; /* Hacer el botón redondeado */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .container {
@@ -161,7 +168,7 @@ header {
     width: 100%;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     text-align: center;
-    margin: 0 16px;
+    margin: 150px 16px; /* Ajusta este valor para que no se suba */
     zoom: 120%;
 }
 
@@ -184,7 +191,9 @@ p {
     border-radius: 8px;
     background-color: var(--background);
     color: var(--foreground);
-    resize: none;
+    resize: vertical; /* Solo redimensionar verticalmente */
+    min-height: 30px; /* Altura mínima */
+    overflow-y: auto; /* Asegura que el contenido adicional se desplace en lugar de expandir el contenedor */
 }
 
 .button {
